@@ -1,0 +1,154 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('backgroundd.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #4a5568;
+}
+
+.otp {
+    font-size: 2em;
+    margin: 20px 0;
+    letter-spacing: 5px;
+    word-break: break-all;
+    color: #2d3748;
+}
+
+.settings {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.settings label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+.timer {
+    font-size: 0.9em;
+    color: #4a5568;
+    margin-bottom: 10px;
+}
+
+.actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.actions button {
+    padding: 12px 24px;
+    font-size: 1em;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    flex: 1;
+    min-width: 120px;
+    transition: all 0.3s ease;
+}
+
+.actions button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.actions button:active {
+    transform: translateY(0);
+}
+
+/* Media Queries */
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .otp {
+        font-size: 1.5em;
+        letter-spacing: 3px;
+    }
+
+    .actions button {
+        width: 100%;
+        padding: 10px 20px;
+    }
+
+    .designer {
+        font-size: 0.9rem;
+        bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    .otp {
+        font-size: 1.2em;
+        letter-spacing: 2px;
+    }
+}
+
+.designer {
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+    font-weight: 500;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    backdrop-filter: blur(5px);
+    background: rgba(0, 0, 0, 0.2);
+}
